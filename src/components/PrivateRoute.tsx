@@ -11,7 +11,7 @@ interface PrivateRouteProps {
 const PrivateRoute: React.FC<PrivateRouteProps> = ({
   auth, path, exact, children,
 }: PrivateRouteProps) => (
-  auth ? <Route path={path} exact={exact}>{children}</Route> : <Redirect to="/" />
+  auth ? <Route path={path} exact={exact}>{children}</Route> : <Redirect to="/home" />
 );
 PrivateRoute.defaultProps = {
   exact: false,

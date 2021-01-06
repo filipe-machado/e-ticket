@@ -19,12 +19,12 @@ const Routes = (): React.ReactElement => (
   <BrowserRouter>
     <Switch>
       <Route path="/home">
-        <Layout>
+        <Layout title="bem vindo">
           <Home />
         </Layout>
       </Route>
-      <PrivateRoute path="/ticket" auth>
-        <Layout>
+      <PrivateRoute path="/ticket" auth={false}>
+        <Layout title="senha">
           <Ticket
             value="123213"
             date="06/01/2021 - 00:00:00"
@@ -32,8 +32,8 @@ const Routes = (): React.ReactElement => (
           />
         </Layout>
       </PrivateRoute>
-      <PrivateRoute path="/queue" auth={false}>
-        <Layout>
+      <PrivateRoute path="/queue" auth>
+        <Layout title="filas">
           <Queue />
         </Layout>
       </PrivateRoute>

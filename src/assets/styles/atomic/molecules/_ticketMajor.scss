@@ -1,0 +1,26 @@
+@media screen and (min-width: 320px) {
+  .ticket-major {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .text-box {
+      position: absolute;
+      height: 17rem;
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+      width: 60vw;
+      text-align: center;
+      p {
+        align-self: center;
+        &::first-letter {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

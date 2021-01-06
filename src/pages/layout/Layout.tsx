@@ -1,10 +1,23 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import Jumbotrom from 'src/components/Molecules/Jumbotrom';
 
-const Layout: React.FC = ({ children }) => <main>{children}</main>;
+interface LayoutProps {
+  children: React.ReactChild,
+  title: string,
+  description?: string,
+}
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+const Layout: React.FC<LayoutProps> = ({ children, title, description }: LayoutProps) => (
+  <main>
+    <div className="container">
+      <Jumbotrom title={title} description={description} />
+      {children}
+    </div>
+  </main>
+);
+
+Layout.defaultProps = {
+  description: '',
 };
 
 export default Layout;

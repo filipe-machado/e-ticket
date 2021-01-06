@@ -1,0 +1,16 @@
+html {
+  // background: url(../../images/previews/home.svg) no-repeat;
+}
+
+body {
+  // opacity: .4;
+  font-family: 'roboto medium';
+  background: $bg-color;
+  min-height: 100vh;
+}
+
+.container {
+  margin-top: 7.5vw;
+  width: 80vw;
+  margin: auto;
+}

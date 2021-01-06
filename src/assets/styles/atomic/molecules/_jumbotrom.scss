@@ -1,0 +1,19 @@
+@media screen and (min-width: 320px) {
+  .jumbotrom {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      margin-top: 3rem;
+    }
+
+    h2 {
+      position: absolute;
+      text-transform: uppercase;
+    }
+  }
+}
