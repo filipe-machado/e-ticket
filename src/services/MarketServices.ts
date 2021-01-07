@@ -1,6 +1,6 @@
 import HttpClient from '../api/http-client-base';
 
-export interface MarketProps {
+export interface Data {
   id: number;
   name: string;
   country: string;
@@ -11,13 +11,16 @@ export interface MarketProps {
   district: string;
   number: number;
 }
+export interface MarketProps {
+  data: Data[];
+}
 
 export default class MarketServices extends HttpClient {
   private static classInstance?: MarketServices;
 
   private constructor() {
     // dá pra passar um json de argumento assim: { ContentType: 'application/json' }
-    super('http://localhost:3000');
+    super('https://my-json-server.typicode.com/filipe-machado/ticket-db');
   }
 
   public static getInstance(): MarketServices {
@@ -28,7 +31,7 @@ export default class MarketServices extends HttpClient {
     return this.classInstance;
   }
 
-  public getMarkets = () => this.instance.get<MarketProps[]>('/markets');
+  public getMarkets = (): MarketProps | unknown => this.instance.get<MarketProps>('/markets');
 
-  public getMarket = (id: string) => this.instance.get<MarketProps>(`/markets/${id}`);
+  public getMarket = (id: string): MarketProps | unknown => this.instance.get<MarketProps>(`/markets/${id}`);
 }

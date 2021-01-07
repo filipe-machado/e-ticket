@@ -21,9 +21,9 @@ export default class LogServices extends HttpClient {
     return this.classInstance;
   }
 
-  public getLogs = () => this.instance.get<LogProps[]>('/logs');
+  public getLogs = (): LogProps | unknown => this.instance.get<LogProps[]>('/logs');
 
-  public getLog = (id: number) => this.instance.get<LogProps>(`/logs/${id}`);
+  public getLog = (id: number): LogProps | unknown => this.instance.get<LogProps>(`/logs/${id}`);
 
-  public postLog = (description: string) => this.instance.post<LogProps>('/logs', { description });
+  public postLog = (description: string): LogProps | unknown => this.instance.post<LogProps>('/logs', { description });
 }

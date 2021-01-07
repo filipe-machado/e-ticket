@@ -1,9 +1,13 @@
 import HttpClient from '../api/http-client-base';
 
-interface User {
+export interface Data {
   id: string;
   user: string;
   name: string;
+}
+
+export interface UserProps {
+  data: Data[],
 }
 
 export default class UserServices extends HttpClient {
@@ -11,7 +15,7 @@ export default class UserServices extends HttpClient {
 
   private constructor() {
     // dá pra passar um json de argumento assim: { ContentType: 'application/json' }
-    super('http://localhost:3000');
+    super('https://my-json-server.typicode.com/filipe-machado/ticket-db');
   }
 
   public static getInstance(): UserServices {
@@ -22,7 +26,9 @@ export default class UserServices extends HttpClient {
     return this.classInstance;
   }
 
-  public getUsers = () => this.instance.get<User[]>('/users');
+  public getUsers = (): UserProps | unknown => this.instance.get<UserProps>('/users');
 
-  public getUser = (id: string) => this.instance.get<User>(`/users/${id}`);
+  public getUser = (id: string): UserProps | unknown => this.instance.get<UserProps>(`/users/${id}`);
+
+  public postUser = (data: Data): UserProps | unknown => this.instance.post<UserProps>('/users', { data });
 }
