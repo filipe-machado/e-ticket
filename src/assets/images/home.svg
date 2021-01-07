@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="18.655382mm"
-   height="10.583333mm"
-   viewBox="0 0 18.655382 10.583333"
+   width="48"
+   height="48"
+   viewBox="0 0 12.7 12.7"
    version="1.1"
    id="svg338"
    inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
@@ -23,18 +23,23 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="115.25427"
-     inkscape:cy="114.28571"
-     inkscape:document-units="mm"
+     inkscape:zoom="3.9961744"
+     inkscape:cx="32.814409"
+     inkscape:cy="33.394004"
+     inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:window-width="1208"
-     inkscape:window-height="547"
-     inkscape:window-x="79"
-     inkscape:window-y="94"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     units="px"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-global="false" />
   <metadata
      id="metadata335">
     <rdf:RDF>
@@ -43,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -53,34 +58,48 @@
      id="layer1"
      transform="translate(-75.338975,-117.92857)">
     <g
-       id="g5155"
-       transform="matrix(0.91123103,0,0,0.91123103,46.998851,-5.670138)">
-      <path
-         id="rect5128"
-         style="fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
-         d="m 41.399553,135.64184 c -0.203178,-0.0142 -0.412652,0.0301 -0.603064,0.14005 l -9.165331,5.29166 c -0.507765,0.29316 -0.680733,0.93814 -0.387572,1.44591 0.293158,0.50777 0.938141,0.68021 1.445905,0.38706 l 8.635132,-4.98574 8.660453,5.0002 c 0.507767,0.29317 1.152747,0.1202 1.445906,-0.38757 0.293158,-0.50776 0.120195,-1.15223 -0.387573,-1.44539 l -9.165333,-5.29166 c -0.0082,-0.005 -0.01705,-0.007 -0.02532,-0.0114 -0.139341,-0.0805 -0.293225,-0.13196 -0.453203,-0.14315 z" />
+       id="g865"
+       transform="matrix(1.1312516,0,0,1.1312516,-11.456304,-20.44866)">
       <g
-         id="g5149">
+         id="g853">
         <rect
-           style="fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
-           id="rect5124"
-           width="8.4666662"
-           height="2.1166666"
-           x="138.78693"
-           y="-37.774849"
-           rx="1.0583333"
-           ry="1.0583333"
-           transform="rotate(90)" />
+           style="fill:#666666;fill-opacity:1;stroke-width:0;stroke-opacity:0"
+           id="rect843"
+           width="2.1166666"
+           height="5.8705854"
+           x="78.634087"
+           y="126.07571"
+           ry="1.0583333" />
         <rect
-           style="fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
-           id="rect5132"
-           width="8.4666662"
+           style="fill:#666666;fill-opacity:1;stroke-width:0;stroke-opacity:0"
+           id="rect845"
+           width="2.1166666"
+           height="5.8705854"
+           x="83.925751"
+           y="126.07571"
+           ry="1.0583333" />
+      </g>
+      <g
+         id="g857"
+         transform="translate(-0.05093134)">
+        <rect
+           style="fill:#666666;fill-opacity:1;stroke-width:0;stroke-opacity:0"
+           id="rect849"
+           width="7.3885589"
            height="2.1166666"
-           x="138.78693"
-           y="-47.016384"
-           rx="1.0583333"
+           x="132.77689"
+           y="65.995895"
            ry="1.0583333"
-           transform="rotate(90)" />
+           transform="rotate(30)" />
+        <rect
+           style="fill:#666666;fill-opacity:1;stroke-width:0;stroke-opacity:0"
+           id="rect847"
+           width="7.3885589"
+           height="2.1166666"
+           x="2.5389695"
+           y="148.38133"
+           ry="1.0583333"
+           transform="rotate(-30)" />
       </g>
     </g>
   </g>
