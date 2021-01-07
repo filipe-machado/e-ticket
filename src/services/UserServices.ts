@@ -1,14 +1,28 @@
-export default class UserServices {
+import HttpClient from '../api/http-client-base';
+
+interface User {
+  id: string;
   user: string;
+  name: string;
+}
 
-  pass: string;
+export default class UserServices extends HttpClient {
+  private static classInstance?: UserServices;
 
-  constructor(user: string, pass: string) {
-    this.user = user;
-    this.pass = pass;
+  private constructor() {
+    // dá pra passar um json de argumento assim: { ContentType: 'application/json' }
+    super('http://localhost:3000');
   }
 
-  public isAuthenticated(): boolean {
-    return this.user === 'user' && this.pass === '1234';
+  public static getInstance(): UserServices {
+    if (!this.classInstance) {
+      this.classInstance = new UserServices();
+    }
+
+    return this.classInstance;
   }
+
+  public getUsers = () => this.instance.get<User[]>('/users');
+
+  public getUser = (id: string) => this.instance.get<User>(`/users/${id}`);
 }
