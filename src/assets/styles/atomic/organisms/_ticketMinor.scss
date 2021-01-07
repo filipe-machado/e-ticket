@@ -1,5 +1,5 @@
 @media screen and (min-width: 320px) {
-  .ticket-major {
+  .ticket-minor {
     width: 100%;
     height: fit-content;
 
@@ -7,13 +7,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1rem;
 
     .text-box {
       position: absolute;
-      height: 87vw;
-      display: grid;
-      grid-template-rows: 2fr 1fr;
-      width: 60vw;
+      width: 53vw;
+      place-self: start;
       text-align: center;
       p {
         align-self: center;
@@ -21,6 +20,12 @@
           text-transform: uppercase;
         }
       }
+    }
+  }
+
+  a:last-of-type:not(:first-of-type) {
+    .ticket-minor {
+      padding-bottom: 5rem;
     }
   }
 }

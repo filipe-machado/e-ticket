@@ -5,12 +5,13 @@
 @import './helpers/typography';
 
 // ATOMIC
-@import './atomic/atom/button';
-@import './atomic/atom/a';
-@import './atomic/atom/img';
-@import './atomic/organism/jumbotrom';
-@import './atomic/organism/ticketMajor';
-@import './atomic/organism/ticketMinor';
-@import './atomic/organism/navbar';
-
-// PAGES
+@import './atomic/atoms/button';
+@import './atomic/atoms/a';
+@import './atomic/atoms/img';
+@import './atomic/molecules/spinner';
+@import './atomic/organisms/jumbotrom';
+@import './atomic/organisms/ticketMajor';
+@import './atomic/organisms/ticketMinor';
+@import './atomic/organisms/navbar';
+@import './atomic/organisms/offcanvas';
+@import './atomic/pages/error-page';

@@ -1,0 +1,62 @@
+@media screen and (min-width: 320px) {
+  .offcanvas {
+    position: fixed;
+    overflow: hidden;
+    height: 100vh;
+    top: 0;
+    right: -100vh;
+    width: 100vh;
+    background-color: $light-color;
+    display: flex;
+    align-items: center;
+
+    ul {
+      li {
+        list-style: none;
+        margin: 1rem auto;
+      }
+    }
+
+    &-show {
+      animation: showing .5s forwards;
+    }
+
+    &-hide {
+      animation: hiding .5s forwards;
+    }
+
+    @keyframes showing {
+      from {
+        transform: translateX(0);
+        border-radius: 50vh;
+      }
+      50% {
+        border-radius: 50vh;
+      }
+      70% {
+        border-radius: 25vh;
+      }
+      to {
+        transform: translateX(-70vw);
+        border-radius: 0;
+      }
+    }
+
+    @keyframes hiding {
+      from {
+        transform: translateX(-70vw);
+        border-radius: 0;
+      }
+      50% {
+        border-radius: 25vh;
+      }
+      75% {
+        border-radius: 50vh;
+      }
+      to {
+        transform: translateX(0);
+        border-radius: 50vh;
+      }
+    }
+  }
+}

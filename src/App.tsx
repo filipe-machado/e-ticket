@@ -1,8 +1,9 @@
 import React, { Suspense } from 'react';
 import Routes from './routes';
+import Loader from './components/Loader';
 
 const App: React.FC = () => (
-  <Suspense fallback={<>...loading</>}>
+  <Suspense fallback={<Loader />}>
     <Routes />
   </Suspense>
 );

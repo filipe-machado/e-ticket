@@ -13,6 +13,7 @@ const PrivateRoute = lazy(() => import('../components/PrivateRoute'));
 const Home = lazy(() => import('../pages/Home'));
 const Queue = lazy(() => import('../pages/Queue'));
 const Market = lazy(() => import('../pages/Market'));
+const Ticket = lazy(() => import('../pages/Ticket'));
 const Error = lazy(() => import('../pages/Error'));
 
 const Routes = (): React.ReactElement => (
@@ -26,6 +27,9 @@ const Routes = (): React.ReactElement => (
       </PrivateRoute>
       <PrivateRoute path="/markets" auth>
         <Market />
+      </PrivateRoute>
+      <PrivateRoute path="/tickets" auth>
+        <Ticket />
       </PrivateRoute>
       <Route path="/" exact>
         <Redirect to="/home" />

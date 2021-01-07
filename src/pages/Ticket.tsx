@@ -1,33 +1,7 @@
 import React from 'react';
 
-interface TicketProps {
-  value: string,
-  date: string,
-  validate: string,
-}
+import Loader from 'src/components/Loader';
 
-const Ticket: React.FC<TicketProps> = ({
-  value,
-  date,
-  validate,
-}: TicketProps) => (
-  <div>
-    <p>
-      valor do ticket:
-      {' '}
-      {value}
-    </p>
-    <p>
-      data de retirada:
-      {' '}
-      {date}
-    </p>
-    <p>
-      validade:
-      {' '}
-      {validate}
-    </p>
-  </div>
-);
+const Ticket: React.ComponentType = () => <Loader />;
 
 export default Ticket;
