@@ -1,0 +1,21 @@
+.navbar {
+  height: 4rem;
+  position: fixed;
+  bottom: 0;
+  background-color: $light-color;
+  width: 100%;
+  display: flex;
+  ul {
+    width: 80vw;
+    margin: auto;
+    padding: 0px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    li {
+      list-style: none;
+      max-width: 2.25rem;
+      max-height: 2.25rem;
+    }
+  }
+}

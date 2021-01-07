@@ -1,5 +1,5 @@
 @media screen and (min-width: 320px) {
-  .ticket-major {
+  .ticket-minor {
     width: 100%;
     height: fit-content;
 
@@ -10,10 +10,8 @@
 
     .text-box {
       position: absolute;
-      height: 17rem;
-      display: grid;
-      grid-template-rows: 2fr 1fr;
-      width: 60vw;
+      width: 53vw;
+      place-self: start;
       text-align: center;
       p {
         align-self: center;
